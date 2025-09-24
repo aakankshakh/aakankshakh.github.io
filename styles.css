@@ -1,0 +1,254 @@
+body {
+    background-color: white;
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    color: #D14A1F;
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1.5rem;
+}
+
+h2 {
+    color: #EA9AB2;
+    font-size: 3.75rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.75rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-style: dotted;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.main-image {
+    border-radius: 25px;
+    width: 100%;
+    height: 98vh;
+    object-fit: cover;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content {
+    flex: 2;
+    padding-right: 1em;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    height: 300px;
+    min-width: auto
+}
+
+.project-content {
+    flex-direction: column;
+    flex: 1;
+}
+
+.project-image {
+    overflow: hidden;
+    flex: 1;
+}
+
+.image {
+    flex: 1;
+}
+
+.link-container {
+    font-size: 2.25rem;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-right: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: #F1B842;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.header-link {
+    color: #D14A1F;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-style: dashed;
+}
+
+.header-link:hover {
+    text-decoration: none;
+}
+
+/*Social icons styling*/
+.socials-container {
+    bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-top: 5rem;
+}
+
+.social-icon {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+}
+
+.social-icon:hover {
+    fill:#D14A1F;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/*Subpages styling*/
+.back-arrow {
+    color: #D14A1F;
+    text-decoration: none;
+}
+
+.back-arrow:hover {
+    text-decoration: underline;
+}
+
+.page-title {
+    font-size: 3.75rem;
+    padding-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    font-size: 2.5rem;
+    padding-bottom: 0;
+}
+
+/*Research Page Styling*/
+.paper-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.pdf-button {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    height: 1.5rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 12px;
+    color: #D14A1F;
+    background-color: white;
+    border:0.25rem solid #D14A1F;
+}
+
+.pdf-button:hover {
+    color: white;
+    background-color: #D14A1F;
+    border:0.25rem solid #D14A1F;
+}
+
+.doi-button {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    height: 1.5rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 12px;
+    color: #EA9AB2;
+    background-color: white;
+    border:0.25rem solid #EA9AB2;
+}
+
+.doi-button:hover {
+    color: white;
+    background-color: #EA9AB2;
+    border:0.25rem solid #EA9AB2;
+}
+
+@media screen and (max-width: 767px) {
+    #flex-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    h2 {
+        font-size: 2.25rem;
+        padding-bottom: 0.25rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .content {
+        padding-right: 0;
+    }
+    
+    .image {
+        display: none;
+    }
+
+    .link-container {
+        font-size: 1.75rem;
+        gap: 1rem;
+    }
+
+    .page-title {
+    font-size: 3rem;
+    }
+
+    .page-subtitle {
+        font-size: 2rem;
+    }
+
+    .socials-container {
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+}
