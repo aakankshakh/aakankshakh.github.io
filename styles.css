@@ -50,6 +50,9 @@ a:hover {
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     flex: 2;
     padding-right: 1em;
 }
@@ -106,7 +109,6 @@ a:hover {
     flex-direction: row;
     justify-content: flex-start;
     gap: 0.5rem;
-    margin-top: 5rem;
 }
 
 .social-icon {
@@ -199,11 +201,6 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
-    #flex-container {
-        flex-direction: column;
-        gap: 2rem;
-    }
-    
     h1 {
         font-size: 3rem;
         padding-bottom: 0.5rem;
@@ -220,6 +217,7 @@ a:hover {
     
     .content {
         padding-right: 0;
+        gap: 3rem;
     }
     
     .image {
@@ -238,10 +236,5 @@ a:hover {
     .page-subtitle {
         font-size: 2rem;
     }
-
-    .socials-container {
-    gap: 0.5rem;
-    margin-top: 2rem;
-}
 
 }
