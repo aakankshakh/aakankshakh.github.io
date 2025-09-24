@@ -99,17 +99,6 @@ a:hover {
     text-underline-offset: 4px;
 }
 
-.header-link {
-    color: #D14A1F;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    text-decoration-style: dashed;
-}
-
-.header-link:hover {
-    text-decoration: none;
-}
-
 /*Social icons styling*/
 .socials-container {
     bottom: 1rem;
@@ -151,6 +140,8 @@ a:hover {
 
 .back-arrow:hover {
     text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 4px;
 }
 
 .page-title {
